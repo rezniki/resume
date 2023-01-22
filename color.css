@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.6em;
+    /* font-style: italic; */
+    /* font: bold 17px 'Roboto', sans-serif; */
+    /* background: rgba(92, 130, 227, 1); */
+    /* background: #fd7e14; */
+    background: #ffc107;
+    /* color: #0f141e; */
+    /* color: rgba(92, 130, 227, 1); */
+    /* color: rgba(92, 130, 182, 1); */
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+
+.info {
+    display: flex;
+}
+
+.info img {
+    width: 280px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.943);
+    margin-bottom: 20px;
+}
+
+.info-text {
+    color: rgb(254, 254, 255);
+    background: black;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.785);
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.info-text p {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(254, 254, 255);
+    padding-left: 10px;
+}
+
+.info-text a {
+    /* color: rgb(123, 163, 222); */
+    color: yellow;
+    text-decoration: none;
+}
+
+.info-text a:hover {
+    color: orange;
+}
+
+.info-text a:active {
+    color: rgb(123, 163, 222);
+}
+
+@media (max-width: 800px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.hobby {
+    background: rgb(137, 161, 128);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.785);
+}
+
+.hobby h2 {
+    color: rgb(254, 254, 255);
+}
+
+
+.purple {
+    color: rgb(3, 39, 89);
+    list-style: none;
+    padding: 0;
+}
+
+.purple li {
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+
+.work {
+    background: rgb(196, 87, 4);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    color:rgb(254, 254, 255);
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.785);
+}
+
+.work table {
+    width: 100%;
+}
+
+.works td {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.works td:nth-child(1) {
+    color: rgb(3, 39, 89);
+}
+
+.works td:nth-child(1), .works td:nth-child(2), .works td:nth-child(3)  {
+    background: #d4a004;
+    padding-top: 15px;
+}
+
+.message {
+    background: rgb(64, 96, 0);
+    color:rgb(254, 254, 255);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.785);
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+@media (max-width: 800px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.btn {
+    background: #ffc107;
+    padding: 15px 20px;
+    color: black;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
