@@ -6,92 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="resume, cv, reznik" >
     <meta name="description" content="Это сайт - резюме Игоря Резника">
+    <link rel="stylesheet" href="color.css">
     <title>Igor Resume</title>
-</head>
+</head> 
 <body>
-    <img src="avatar.jpg" width="200" alt="Игорь Резник">
     
-    <h1>Игорь Резник</h1>
-    <p>Я студент <strong>4-го курса</strong> группы ПЭ-20 <strong>БрГТУ</strong>.</p>
-    <!--Также я являюсь <strong>сахарным человеком</strong> и <strong>повелителем сахарной свеклы</strong>.-->
-    <!--<p>Будущий <strong>директор</strong> Жабинковского Сахарного завода, а также будущий глава сетей сахарных заводов.</p>-->
-    <!--<p>Возможно будущий <strong>мэр</strong> города Жабинки. </p>-->
-    <p>Я люблю заниматься <em>спортом, искать что-то новое в программировании, классно общаться и проводить время с друзьями.</em></p>
-    
-    <h2>Список социальных сетей:</h2>
-    <a href="https://www.instagram.com/reznik_sir/" target="_blank">Instagram</a> 
-    <strong>|</strong> 
-    <a href="https://vk.com/igorreznik2001" target="_blank">ВКонтакте</a>
-    <strong>|</strong> 
-    <a href="https://www.youtube.com/channel/UCzB_CTzGjecG6R2zsmZFe1Q" target="_blank">Youtube</a>
-    
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Компьютерные игры</li>
-        <li>Баскетбол</li>
-        <li>Программирование</li>
-        <li>Чтение книг</li>
-        <li>Фильмы</li>
-        <li>Спорт</li>
-    </ol>
+    <div class="container">
+        <div class="card info">
+            <img src="Igor.jpg" alt="Игорь Резник">
 
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
+            <div class="info-text">
+                <h1>Игорь Резник</h1>
+                <p>Я студент <strong>4-го курса</strong> группы ПЭ-20 <strong>БрГТУ</strong>. <br>
+                Я люблю заниматься <em>спортом, искать что-то новое в программировании, классно общаться и проводить время с друзьями.</em></p>
+                <h2>Список социальных сетей:</h2>
+                <a href="https://www.instagram.com/reznik_sir/" target="_blank">Instagram</a> 
+                <strong>|</strong> 
+                <a href="https://vk.com/igorreznik2001" target="_blank">ВКонтакте</a>
+                <strong>|</strong> 
+                <a href="https://www.youtube.com/channel/UCzB_CTzGjecG6R2zsmZFe1Q" target="_blank">Youtube</a>
+            </div>
+        </div>
         
-        <tbody>
-            <tr>
-                <td>БрГТУ</td>
-                <td>Студент</td>
-                <td>2019-2023</td>
-            </tr>
+        <div class="card hobby">
+            <h2>Мои хобби:</h2>
+                <ol class="purple">
+                    <li>Компьютерные игры</li>
+                    <li>Баскетбол</li>
+                    <li>Программирование</li>
+                    <li>Чтение книг</li>
+                    <li>Фильмы</li>
+                    <li>Спорт</li>
+                </ol>
+        </div>    
 
-            <tr>
-                <td>Skillbox</td>
-                <td>Студент</td>
-                <td>2021</td>
-            </tr>
+        <div class="card work">
+            <h2>Опыт работы</h2>
+            <table class="works">
+                <tbody>
+                    <tr>
+                        <td>БрГТУ</td>
+                        <td>Студент</td>
+                        <td>2019-2023</td>
+                    </tr>
 
-            <tr>
-                <td>Geekbrains</td>
-                <td>Студент</td>
-                <td>2022</td>
-            </tr>
+                    <tr>
+                        <td>Geekbrains</td>
+                        <td>Студент</td>
+                        <td>2020</td>
+                    </tr>
 
-            <tr>
-                <td>Result</td>
-                <td>Студент</td>
-                <td>2023</td>
-            </tr>
-        </tbody>
-    </table>
+                    <tr>
+                        <td>Skillbox</td>
+                        <td>Студент</td>
+                        <td>2021</td>
+                    </tr>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text" placeholder="Введите имя">
+                    <tr>
+                        <td>Result</td>
+                        <td>Студент</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card message">
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="text">Ваше имя:</label>
+                        <input type="text" id="text" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                
+                <button class="btn">Отправить!</button>
+                
+            </form>
         </div>
-
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
-
-        <button type="submit">Отправить!</button>
-    </form>
-
+    </div>        
 </body>
 </html>
